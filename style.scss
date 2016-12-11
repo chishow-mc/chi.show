@@ -1,0 +1,149 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "variables";
+@import "highlights";
+@import "svg-icons";
+
+* {
+//    transition: 0.25s;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#himawari {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUzWiDx5CRCbizoviBViTs6ZCZJdjDhmR87YyfghyHt0CPt1iIzWSE6YibWfhncgx7ipB/rzSHu2SLu2yJqrJfdAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAACRSURBVFjD7ZXBDsIgEAWh1qrV1Kr//6/OS7oJ4WCKt7I7FwjhDclmgZSCIPhJhhPY6E1Qh1+guReBBe9w2XiDrXsQWOEUvMECmucNDwIrlkJPkGSF3ZeqA4E2zlA20geaGunggvpBMeHfL9JBBfE3pjTCABNobD69A8EVFJToAR4FJrFiehWUDeVZoPAZOhd8AbXrFOG0X/2VAAAAAElFTkSuQmCC') no-repeat bottom right;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1240px) {
+    .hero .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .column.is-one-third,.column.is-one-third-tablet {
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+        width: 33.3333%;
+    }
+}
+
+.section {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.columns {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 40px;
+}
+
+.column {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: calc( inherit - 20px);
+}
+
+@media screen and (min-width: 769px) {
+    .column.is-one-third,
+    .column.is-one-third-tablet {
+        width: calc(33.3333% - 20px);
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .column.is-one-quarter-desktop {
+        width: calc(25% - 20px);
+    }
+}
+
+.footer {
+    padding: 40px 20px;
+}
+
+/* Bust image */
+.image.is-square {
+    padding-top: calc( 100% - 25px );
+}
+.image.is-square .bust {
+    width: auto;
+    height: auto;
+    top: -25px;
+}
+
+#online-users, #online-users .login_time {
+    display: none;
+}
+
+/* sub account ribon*/
+.card {
+    overflow: hidden;
+}
+.subaccount {
+    width: 100px;
+    padding: 3px 10px;
+    background: #d43131;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: -24px;
+    transform: rotate(405deg);
+}
+
+/* Exp Progress */
+.progress-info {
+    position: absolute;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: .95rem;
+    width: 10rem;
+    height: 1rem;
+    bottom: 114px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.progress.is-primary {
+    margin-bottom: 0;
+}
+
+.card-footer-item {
+    font-size: 18px;
+}
+.card-footer-item .fa {
+    margin-right: 4px;
+}
+.card-footer-item img {
+    width: 18px;
+    margin-right: 4px;
+}
+
+.card-footer-item[data-value] {
+	color: #00d1b2;
+}
+.card-footer-item[data-value^="0"] {
+	color : #ffdd57;
+}
+.card-footer-item.health[data-value^="1"] {
+	color : #ffdd57;
+}
+.card-footer-item[data-value="00"] {
+	color : #ff3860;
+}
