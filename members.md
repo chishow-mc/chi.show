@@ -42,7 +42,8 @@ permalink: /members/
           { "4993972d-3d99-4f77-b490-c13aac5575dc" :"nanase_coder" },
           { "d723b514-850a-44ad-a5bc-474d633275c2" :"fumieval" },
           { "bd117a60-8b8f-4704-bf46-0fbdd5c84a56" :"su2ca" },
-          { "d9b34348-01f2-449a-8e03-5dbc3fce21e9" :"CUP_dadapo" }
+          { "d9b34348-01f2-449a-8e03-5dbc3fce21e9" :"CUP_dadapo" },
+          { "4f112cce-e958-4ffc-b672-72e2804853cb" :"eai04191" }
         ];
         for(var i = 0; i < array.length; i++) {
             if(array[i][uuid] !== undefined){
@@ -55,7 +56,8 @@ permalink: /members/
         var array = [
           { "0fba512a-44dd-4ec4-9ef6-ecb2aa28c38e" :true },
           { "efcd84f7-65c7-4803-ad2e-6f7b6fa7a66c" :true },
-          { "d9b34348-01f2-449a-8e03-5dbc3fce21e9" :true }
+          { "d9b34348-01f2-449a-8e03-5dbc3fce21e9" :true },
+          { "4f112cce-e958-4ffc-b672-72e2804853cb" :true }
         ];
         for(var i = 0; i < array.length; i++) {
             if(array[i][uuid] !== undefined){
@@ -110,7 +112,7 @@ permalink: /members/
                 var login_time = moment.unix(json["stats_players"][i].login_time).fromNow();
 
                 var playerdata =
-                    '<div class="card column is-12-mobile is-one-third-tablet is-one-quarter-desktop">' +
+                    '<div class="card column is-12-mobile is-one-third-tablet is-one-quarter-desktop" data-uuid="' + uuid + '">' +
                         '<div class="card-image">' +
                             '<figure class="image is-square">' +
                               '<img class="bust" src="' + bust_url + '">' +
