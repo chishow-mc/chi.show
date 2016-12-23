@@ -104,7 +104,7 @@ permalink: /members/
                 var bust_url = "https://visage.surgeplay.com/bust/512/" + uuid;
                 var icon = "https://visage.surgeplay.com/head/512/" + uuid + "";
                 var exp_level = json["stats_players"][i].exp_level;
-                var exp_perc = paddingZero(json["stats_players"][i].exp_perc * 100);
+                var exp_perc = round(json["stats_players"][i].exp_perc * 100);
                 var food_level = paddingZero(json["stats_players"][i].food_level);
                 var health = paddingZero(Math.floor(json["stats_players"][i].health));
                 var armor = paddingZero(Math.floor(json["stats_players"][i].armor_rating));
