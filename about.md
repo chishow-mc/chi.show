@@ -7,7 +7,7 @@ permalink: /about/
 
 基本情報
 ---
-- サーバーアドレス: **`play.mc.mizle.net`**
+- サーバーアドレス: **`play.chi.show`**
 - Minecraftバージョン: `1.11`
 - サーバーバージョン: `CraftBukkit version git-Spigot-f950f8e-0fa1ad2 (MC: 1.11) (Implementing API version 1.11-R0.1-SNAPSHOT) `
   - 随時[Spigot](https://www.spigotmc.org/)の最新版に更新予定です。
