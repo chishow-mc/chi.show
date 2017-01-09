@@ -20,6 +20,6 @@ deployment:
       - git clone git@github.com:chishow-mc/web.git master
       - hugo version
       - hugo
-      - cd public && git add --all
-      - cd public && git commit -m "[ci skip] Publish updates"
-      - cd public && git push -f origin gh-pages
+      - cd mater\public && git add --all
+      - cd mater\public && git commit -m "[ci skip] Publish updates"
+      - cd mater\public && git push -f origin gh-pages
