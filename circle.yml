@@ -10,7 +10,6 @@ dependencies:
   pre:
     - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
     - sudo dpkg -i hugo_0.18.1-64bit.deb
-    - rm hugo_0.18.1-64bit.deb
     - git config --global user.name "CircleCI"
     - git config --global user.email "circleci@mizle.net"
 
@@ -18,14 +17,16 @@ deployment:
   master:
     branch: master
     commands:
+      - rm -rf *
       - ls -l
       - git clone git@github.com:chishow-mc/web.git web
       - ls -l
+      - cd web && ls -l
       - hugo version
       - cd web && hugo
-      - ls -l
+      - cd web && ls -l
       - cd web\public && git add --all
-      - ls -l
+      - cd web && ls -l
       - cd web\public && git commit -m "[ci skip] Publish updates"
-      - ls -l
+      - cd web && ls -l
       - cd web\public && git push -f origin gh-pages
