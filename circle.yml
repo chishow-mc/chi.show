@@ -28,7 +28,7 @@ deployment:
       - git status
       - git checkout gh-pages
       - git status
-      - cd web/public && git add --all
+      - cd web/public && git add .
       - git status
       - git commit -m "[ci skip] Publish updates"
       - git status
