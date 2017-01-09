@@ -83,6 +83,8 @@ type = "page"
                 }
             );
 
+            var timestamp = moment().format("YYYYMMDDHH");
+
             for (var i = 0; i < len; i++) {
                 var name = json["stats_players"][i].name;
                 if(name == "Eai"){
@@ -101,8 +103,8 @@ type = "page"
                 }else {
                     var subaccount_tag = '<span class="subaccount">Sub</span>';
                 }
-                var bust_url = "https://visage.surgeplay.com/bust/512/" + uuid;
-                var icon = "https://visage.surgeplay.com/head/512/" + uuid + "";
+                var bust_url = "https://visage.surgeplay.com/bust/512/" + uuid + "?" + timestamp;
+                var icon = "https://visage.surgeplay.com/head/512/" + uuid + "?" + timestamp;
                 var exp_level = json["stats_players"][i].exp_level;
                 var exp_perc = new Big(json["stats_players"][i].exp_perc).times(100);
                 var food_level = paddingZero(json["stats_players"][i].food_level);
