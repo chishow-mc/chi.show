@@ -17,19 +17,10 @@ deployment:
   master:
     branch: master
     commands:
-      - rm -rf *
       - ls -l
-      - git clone git@github.com:chishow-mc/web.git web
-      - ls -l
-      - cd web && ls -l
       - hugo version
-      - cd web && hugo
-      - cd web && ls -l
-      - git status
+      - hugo
       - git checkout gh-pages
-      - git status
-      - cd web/public && git add .
-      - git status
+      - cd public && git add .
       - git commit -m "[ci skip] Publish updates"
-      - git status
       - git push -f origin gh-pages
