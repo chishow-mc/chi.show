@@ -13,14 +13,17 @@ dependencies:
     - git config --global user.name "CircleCI"
     - git config --global user.email "circleci@mizle.net"
 
+test:
+  override:
+    - hugo version
+    - hugo
+
 deployment:
   master:
     branch: master
     commands:
       - ls -l
-      - hugo version
-      - hugo
       - git checkout gh-pages
-      - cd public && git add .
-      - git commit -m "[ci skip] Publish updates"
+      - cd public && git add --all && git commit -m "[ci skip] Publish updates"
       - git push -f origin gh-pages
+ 
