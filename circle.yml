@@ -17,10 +17,13 @@ deployment:
   master:
     branch: master
     commands:
-      - git clone git@github.com:chishow-mc/web.git
-      - hugo version
-      - hugo
+      - git clone git@github.com:chishow-mc/web.git web
       - ls -l
-      - cd public && git add --all
-      - cd public && git commit -m "[ci skip] Publish updates"
-      - cd public && git push -f origin gh-pages
+      - hugo version
+      - cd web && hugo
+      - ls -l
+      - cd web\public && git add --all
+      - ls -l
+      - cd web\public && git commit -m "[ci skip] Publish updates"
+      - ls -l
+      - cd web\public && git push -f origin gh-pages
