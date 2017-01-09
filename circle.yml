@@ -24,7 +24,7 @@ deployment:
     commands:
       - ls -l
       - ls | grep -v -E '^public$' | xargs rm -r
-      - mv public/* ../
+      - mv public/* ./
       - rm -r public
       - ls -l
       - git checkout gh-pages
