@@ -1,8 +1,8 @@
----
-layout: default
-title: Members
-permalink: /members/
----
++++
+title = "Members"
+type = "page"
++++
+
 
 <section class="section" id="online-users">
     <div class="container">

@@ -1,13 +1,3 @@
----
----
-
-//
-// IMPORTS
-//
-
-@import "variables";
-@import "highlights";
-
 * {
 //    transition: 0.25s;
 }
@@ -145,4 +135,8 @@
 }
 .card-footer-item[data-value="00"] {
 	color : #ff3860;
+}
+
+.content a:not(.button) {
+    border-bottom: 0;
 }

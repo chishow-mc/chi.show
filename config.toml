@@ -1,0 +1,15 @@
+BaseURL = "http://chi.show/"
+
+Title = "Chishow Server"
+Author = "Eai"
+
+languageCode = "ja"
+hasCJKLanguage = true
+
+
+
+[params]
+    Description = "Minecraft史上最も池沼なサーバー"
+
+[permalinks]
+  news = "news/:title"

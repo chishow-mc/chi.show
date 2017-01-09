@@ -1,8 +1,7 @@
----
-layout: page
-title: サーバー仕様
-permalink: /about/
----
++++
+title = "About"
+type = "post"
++++
 
 
 基本情報
