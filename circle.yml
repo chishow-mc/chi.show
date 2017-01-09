@@ -18,6 +18,7 @@ deployment:
     branch: master
     commands:
       - git clone git@github.com:chishow-mc/web.git master
+      - hugo version
       - hugo
       - cd public && git add --all
       - cd public && git commit -m "[ci skip] Publish updates"
