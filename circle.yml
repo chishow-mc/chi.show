@@ -23,7 +23,11 @@ deployment:
     branch: master
     commands:
       - ls -l
+      - ls | grep -v -E '^public$' | xargs rm -r
+      - mv public/* ../
+      - rm -r public
+      - ls -l
       - git checkout gh-pages
-      - cd public && git add --all && git commit -m "[ci skip] Publish updates"
+      - git add --all && git commit -m "[ci skip] Publish updates"
       - git push -f origin gh-pages
  
