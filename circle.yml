@@ -21,6 +21,7 @@ deployment:
       - cd web
       - hugo version
       - hugo
+      - cd public
       - git add --all
       - git commit -m "[ci skip] Publish updates"
       - git push -f origin gh-pages
