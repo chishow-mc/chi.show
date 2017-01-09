@@ -18,7 +18,7 @@ deployment:
   master:
     branch: master
     commands:
-    　- ls -l
+      - ls -l
       - git clone git@github.com:chishow-mc/web.git web
       - ls -l
       - hugo version
