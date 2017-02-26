@@ -8,7 +8,7 @@ type = "post"
 ---
 - サーバーアドレス: **`play.chi.show`**
 - Minecraftバージョン: `1.11.2`
-- サーバーバージョン: `CraftBukkit version git-Spigot-7d78b81-d5e7885 (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)`
+- サーバーバージョン: ` CraftBukkit version git-Spigot-d4f98a3-4448a7e (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)`
   - 随時[Spigot](https://www.spigotmc.org/)の最新版に更新予定です。
 
 ---
@@ -53,7 +53,7 @@ type = "post"
 3. <span class="mc_gold">[VIP]</span> - このサーバーに**特別な貢献**をしたユーザーのみ付与されます。
 6. <span class="mc_dark_purple">[分身]</span> - サブアカウントはこのタグが強制されます。
 
-1. <span class="mc_aqua">[仮面浪人]</span>
+1. <span class="mc_aqua">空き</span>
 2. <span class="mc_gray">[無職]</span>
 4. <span class="mc_light_purple">[ロリコン]</span>
 5. <span class="mc_blue">[盗人]</span>
