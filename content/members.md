@@ -68,7 +68,7 @@ type = "page"
 
     $.ajax({
         type: 'GET',
-        url: 'http://api.chi.show/v1/',
+        url: 'https://api.chi.show/v1/',
         dataType: 'json',
         success: function(json) {
             var len = json["stats_players"].length;
