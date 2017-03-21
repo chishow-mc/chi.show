@@ -58,8 +58,9 @@ type = "page"
           { "0fba512a-44dd-4ec4-9ef6-ecb2aa28c38e" :true },
           { "efcd84f7-65c7-4803-ad2e-6f7b6fa7a66c" :true },
           { "d9b34348-01f2-449a-8e03-5dbc3fce21e9" :true },
-          { "4f112cce-e958-4ffc-b672-72e2804853cb" :true }
-        ];
+          { "4f112cce-e958-4ffc-b672-72e2804853cb" :true },
+          { "8a030347-3955-4899-98ea-f9fc0bfa079f" :true }
+          ];
         for(var i = 0; i < array.length; i++) {
             if(array[i][uuid] !== undefined){
                 return(array[i][uuid]);
