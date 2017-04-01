@@ -38,6 +38,7 @@ type = "page"
           { "d6692e9d-4ea1-4074-ba74-14f013b8db37" :"benntann_RX" },
           { "2cc26e6b-4fc0-4086-8527-0753fb48d5d3" :"Angelfall1229" },
           { "8a030347-3955-4899-98ea-f9fc0bfa079f" :"automatic_penis" },
+          { "191b9b99-ff7c-4502-8885-328f71b20ae2" :"automatic_penis" },
           { "593fd0a2-482d-46ee-b9a8-980414a5e9d7" :"IV_C_LI" },
           { "4993972d-3d99-4f77-b490-c13aac5575dc" :"nanase_coder" },
           { "d723b514-850a-44ad-a5bc-474d633275c2" :"fumieval" },
@@ -57,8 +58,9 @@ type = "page"
           { "0fba512a-44dd-4ec4-9ef6-ecb2aa28c38e" :true },
           { "efcd84f7-65c7-4803-ad2e-6f7b6fa7a66c" :true },
           { "d9b34348-01f2-449a-8e03-5dbc3fce21e9" :true },
-          { "4f112cce-e958-4ffc-b672-72e2804853cb" :true }
-        ];
+          { "4f112cce-e958-4ffc-b672-72e2804853cb" :true },
+          { "8a030347-3955-4899-98ea-f9fc0bfa079f" :true }
+          ];
         for(var i = 0; i < array.length; i++) {
             if(array[i][uuid] !== undefined){
                 return(array[i][uuid]);
