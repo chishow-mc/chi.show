@@ -13,6 +13,14 @@
     margin: 0 auto;
 }
 
+.hero-body .title {
+    margin: 0;
+}
+
+.hero-body .title+.subtitle {
+    margin-top: .7rem;
+}
+
 @media screen and (min-width: 1240px) {
     .hero .container {
         padding-left: 0;
@@ -37,7 +45,7 @@
 .columns {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 40px;
+    margin-top: 0
 }
 
 .column {
