@@ -1,10 +1,39 @@
 ﻿{{ partial "header.html" . }}
 
+<script>
+var netdataNoBootstrap = true;
+var netdataServer = "https://netdata.chi.show";
+
+</script>
+<script type="text/javascript" src="//netdata.chi.show/dashboard.js"></script>
 <section class="section">
     <div class="container">
-        <h1 class="title"></h1>
-<p>トップページです</p>
+        <div class="columns">
+          <div class="column is-two-thirds">
+<article class="message is-warning">
+  <div class="message-header">
+    <p>サーバーがやばい</p>
+  </div>
+  <div class="message-body">
+    なんかやばくなったら表示されるようなの
+  </div>
+</article>
+          </div>
+          <div class="column">
+<article class="message is-primary">
+  <div class="message-header">
+    <p>サーバーステータス</p>
+  </div>
+  <div class="message-body" style="box-sizing: border-box;">
+<div data-netdata="system.cpu" data-chart-library="gauge" data-title="CPU使用率" data-units="%" data-gauge-max-value="100" data-width="100%" data-after="-540" data-points="540" data-colors="#00d1b2" role="application" class="netdata-container"></div>
+<div data-netdata="system.ram" data-dimensions="used|buffers|active|wired" data-append-options="percentage" data-chart-library="easypiechart" data-title="メモリ使用率" data-units="%" data-easypiechart-max-value="100" data-width="50%" data-after="-540" data-points="540" data-colors="#EE9911" role="application" class="netdata-container" style="float:left;"></div>
+<div data-netdata="system.ipv4" data-dimensions="received" data-chart-library="easypiechart" data-title="IPv4受信量" data-width="50%" data-before="0" data-after="-540" data-points="540" role="application" class="netdata-container"></div>
+<p>もっと詳しいステータス: <a href="https://netdata.chi.show/">netdata.chi.show</a></p>
 
+  </div>
+</article>
+          </div>
     </div>
 </section>
+
 {{ partial "footer.html" . }}
