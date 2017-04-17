@@ -2,6 +2,10 @@
 //    transition: 0.25s;
 }
 
+#hero-wrapper {
+    background: linear-gradient(141deg,#009e6c 0,#00d1b2 71%,#00e7eb 100%);
+}
+
 #wrapper {
     margin: 0 auto;
 }
