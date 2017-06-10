@@ -7,8 +7,8 @@ type = "post"
 基本情報
 ---
 - サーバーアドレス: **`chi.show`**
-- Minecraftバージョン: `1.11.2`
-- サーバーバージョン: ` CraftBukkit version git-Spigot-283de8b-aa522c9 (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)`
+- Minecraftバージョン: `1.12`
+- サーバーバージョン: ` CraftBukkit version git-Spigot-87496df-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)`
   - 随時[Spigot](https://www.spigotmc.org/)の最新版に更新予定です。
 
 ---
