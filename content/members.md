@@ -3,8 +3,17 @@ title = "Members"
 type = "page"
 +++
 
+<section class="section">
+<div class="container">
+    <article class="article">
+        <h1 class="title is-2">Members</h1>
+        <div class="content is-medium">
+            <p>かつてこのページではオンライン・オフラインのメンバーの体力・空腹度・経験値が確認できました。</p>
+        </div>
+    </article>
+</div>
 
-<section class="section" id="online-users">
+<!-- <section class="section" id="online-users">
     <div class="container">
         <h1 class="title">オンラインユーザー</h1>
         <h2 class="subtitle">現在池沼鯖でプレイ中のユーザー</h2>
@@ -20,8 +29,11 @@ type = "page"
         <div class="columns is-multiline is-mobile" id="whitelist-users-list">
         </div>
     </div>
+</section> -->
+
 </section>
 
+<!--
 <script>
 (window.onload = function() {
     function paddingZero(n) {
@@ -163,3 +175,4 @@ type = "page"
     });
 })();
 </script>
+-->
