@@ -4,7 +4,8 @@
     <div class="container">
         <article class="article">
             {{ if not .Date.IsZero }}
-            <p class="subtitle is-4">{{ .Date }}</p>{{ end }}
+            <p class="subtitle is-4">{{ .Date }}</p>
+            {{ end }}
             <h1 class="title is-2">{{ .Title }}</h1>
             <div class="content is-medium">
                 {{ .Content }}
