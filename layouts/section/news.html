@@ -1,10 +1,13 @@
 {{ partial "header.html" . }}
 
+<section class="section">
+    <div class="container" style="padding-bottom:0;">
+        <h1 class="title is-2">News</h1>
+    </div>
+</section>
 
-{{ range (.Paginator 10).Pages }}
-    {{ .Render "list" }}
-{{ end }}
- 
+{{ range (.Paginator 10).Pages }} {{ .Render "list" }} {{ end }}
+
 <!-- ページめくりリンクの追加 -->
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <div>
@@ -18,6 +21,4 @@
         {{ end }}
     </nav>
 </div>
-{{ end }}
-
-{{ partial "footer.html" . }}
+{{ end }} {{ partial "footer.html" . }}
