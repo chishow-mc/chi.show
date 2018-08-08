@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-{{ if .IsHome }}
+
+<head>
+    {{ if .IsHome }}
     <title>{{ .Site.Title }}</title>
-{{ else }}
+    {{ else }}
     <title>{{ .Title }} - {{ .Site.Title }}</title>
-{{ end }}
-    <meta charset="utf-8">
-    {{ .Hugo.Generator }}
+    {{ end }}
+    <meta charset="utf-8"> {{ .Hugo.Generator }}
 
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -22,40 +22,52 @@
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css'>
-    <link rel='stylesheet' href='{{ .Site.BaseURL }}style.css'>
-{{ if .RSSLink }}
+    <link rel='stylesheet' href='{{ .Site.BaseURL }}style.css'> {{ if .RSSLink }}
     <link rel="alternate" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link rel="feed" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}" />
-{{ end }}
-    </head>
+    <link rel="feed" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }}
+</head>
 
-    <body>
+<body>
     <div id="hero-wrapper">
-    <section class="hero is-primary is-bold">
-        <div id="himawari">
-            <div id="wrapper">
-                <div class="hero-body">
-                    <div class="container has-text-centered">
-                        <h1 class="title"><a href="/">{{ .Site.Title }}</a></h1>
-                        <h2 class="subtitle">{{ .Site.Params.Description }}</h2>
+        <section class="hero is-primary is-bold">
+            <div id="himawari">
+                <div id="wrapper">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <h1 class="title">
+                                <a href="/">{{ .Site.Title }}</a>
+                            </h1>
+                            <h2 class="subtitle">{{ .Site.Params.Description }}</h2>
+                        </div>
+                    </div>
+
+                    <div class="hero-foot">
+                        <nav class="tabs is-boxed is-fullwidth">
+                            <div class="container">
+                                <ul>
+                                    <li{{if in .URL "/about/" }} class="is-active" {{ end }}>
+                                        <a href="/about/">About</a>
+                                    </li>
+                                    <li{{if in .URL "/news/" }} class="is-active" {{ end }}>
+                                        <a href="/news/">News</a>
+                                    </li>
+                                    <li{{if in .URL "/members/" }} class="is-active" {{ end }}>
+                                        <a href="/members/">Members</a>
+                                    </li>
+                                    <li{{if in .URL "/plugins/" }} class="is-active" {{ end }}>
+                                        <a href="/plugins/">Plugins</a>
+                                    </li>
+                                    <li>
+                                        <a>Map</a>
+                                    </li>
+                                    <li>
+                                        <a>Stats</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-
-                <div class="hero-foot">
-                    <nav class="tabs is-boxed is-fullwidth">
-                        <div class="container">
-                            <ul>
-                                <li{{if in .URL "/about/" }} class="is-active"{{ end }}><a href="/about/">About</a></li>
-                                <li{{if in .URL "/news/" }} class="is-active"{{ end }}><a href="/news/">News</a></li>
-                                <li{{if in .URL "/members/" }} class="is-active"{{ end }}><a href="/members/">Members</a></li>
-                                <li{{if in .URL "/plugins/" }} class="is-active"{{ end }}><a href="/plugins/">Plugins</a></li>
-                                <li><a>Map</a></li>
-                                <li><a>Stats</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
             </div>
-        </div>
+        </section>
     </div>
-    </section>

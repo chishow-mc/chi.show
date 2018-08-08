@@ -1,1 +1,1 @@
-$("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank');
+$("a[href^='http']:not([href*='" + location.hostname + "'])").attr("target", "_blank");

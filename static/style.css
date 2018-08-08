@@ -1,9 +1,9 @@
 * {
-//    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 
 #hero-wrapper {
-    background: linear-gradient(141deg,#009e6c 0,#00d1b2 71%,#00e7eb 100%);
+    background: linear-gradient(141deg, #009e6c 0, #00d1b2 71%, #00e7eb 100%);
 }
 
 #wrapper {
@@ -33,7 +33,8 @@
 }
 
 @media screen and (min-width: 769px) {
-    .column.is-one-third,.column.is-one-third-tablet {
+    .column.is-one-third,
+    .column.is-one-third-tablet {
         -webkit-box-flex: 0;
         -ms-flex: none;
         flex: none;
@@ -77,23 +78,28 @@
 }
 
 /* Bust image */
+
 .image.is-square {
-    padding-top: calc( 100% - 25px );
+    padding-top: calc( 100% - 25px);
 }
+
 .image.is-square .bust {
     width: auto;
     height: auto;
     top: -25px;
 }
 
-#online-users, #online-users .login_time {
+#online-users,
+#online-users .login_time {
     display: none;
 }
 
 /* sub account ribon*/
+
 .card {
     overflow: hidden;
 }
+
 .subaccount {
     width: 100px;
     padding: 3px 10px;
@@ -108,6 +114,7 @@
 }
 
 /* Exp Progress */
+
 .progress-info {
     position: absolute;
     text-align: center;
@@ -128,25 +135,30 @@
 .card-footer-item {
     font-size: 18px;
 }
+
 .card-footer-item .fa {
     margin-right: 4px;
 }
+
 .card-footer-item img {
     width: 18px;
     margin-right: 4px;
 }
 
 .card-footer-item[data-value] {
-	color: #00d1b2;
+    color: #00d1b2;
 }
+
 .card-footer-item[data-value^="0"] {
-	color : #ffdd57;
+    color: #ffdd57;
 }
+
 .card-footer-item.health[data-value^="1"] {
-	color : #ffdd57;
+    color: #ffdd57;
 }
+
 .card-footer-item[data-value="00"] {
-	color : #ff3860;
+    color: #ff3860;
 }
 
 .content a:not(.button) {
